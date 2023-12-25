@@ -93,7 +93,7 @@ index 58fb997..e9cf48e 100644
        timestamp: 'date',
 +      upper_bound: 'float',
 +      lower_bound: 'float',
-+      trigger_alert: 'float'
++      trigger_alert: 'float,
      };
  
      if (window.perspective && window.perspective.worker()) {
