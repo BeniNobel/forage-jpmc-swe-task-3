@@ -119,14 +119,12 @@ index 58fb997..e9cf48e 100644
    }
  
    componentDidUpdate() {
-     if (this.table) {
--      this.table.update(
-+      this.table.update([
-         DataManipulator.generateRow(this.props.data),
--      );
-+      ]);
-     }
-   }
- } 
+    if (this.table) {
+      this.table.update([
+        DataManipulator.generateRow(this.props.data),
+      ] as unknown as TableData);
+    }
+  }
+} 
 2.43.0.windows.1
 
