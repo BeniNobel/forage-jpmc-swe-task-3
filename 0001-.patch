@@ -1,0 +1,24 @@
+From 5ffa1bb18e41c941a655c4cbb486ac253794da78 Mon Sep 17 00:00:00 2001
+From: BeniNobel <ibeninobel05@gmail.com>
+Date: Sun, 24 Dec 2023 18:15:19 -0600
+Subject: [PATCH] .
+
+---
+ src/DataManipulator.ts | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/src/DataManipulator.ts b/src/DataManipulator.ts
+index fce3f29..22a7b89 100644
+--- a/src/DataManipulator.ts
++++ b/src/DataManipulator.ts
+@@ -16,7 +16,6 @@ export class DataManipulator {
+     const priceABC = (serverRespond[0].top_ask.price + serverRespond[0].top_bid.price) / 2;
+     const priceDEF = (serverRespond[1].top_ask.price + serverRespond[1].top_bid.price) / 2;
+     const ratio = priceABC / priceDEF;
+-    const historicalAverageRatio = 1.1;
+     const upperBound = 1 + 0.05;
+     const lowerBound = 1 - 0.05;
+     return {
+-- 
+2.43.0.windows.1
+
